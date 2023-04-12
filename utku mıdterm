@@ -1,0 +1,42 @@
+TUĞRUL UTKU HASKAYA / 20170701064
+
+QUESTION 1)
+
+"tugrul": 116 + 117 + 103 + 114 + 117 + 108 = 675
+"utku": 117 + 116 + 107 + 117 = 457
+"haskaya": 104 + 97 + 115 + 107 + 97 + 121 + 97 = 734
+
+Asciiname = 1132
+ASciisurname = 734
+ASciitotal = 1866 
+Timernumber = 15 (since 1866 % 14 + 1 = 15)
+ARRNUMBER = 65535
+Duration = 1020 (since 734 % 1500 = 734, and 734 * 30 = 1020)
+
+QUESTİON 2)
+
+#include "config.h"
+
+#include <stm32/rcc.h>
+#include <stm32/flash.h>
+int main(void)
+{
+int cnt;
+int ledpinnumber;
+ HAL_Init();
+ 
+  SystemClock_Config();
+ 
+  MX_GPIO_Init();
+system_init();
+	led_init();
+	sys_tick_init();
+	can_init();
+while (1){cnt=0
+timer
+cnt=1 
+ HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+      HAL_Delay(1000);
+HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+  }
+};
